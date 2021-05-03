@@ -1,0 +1,17 @@
+[debug] Created transactional ClassFileManager with tempDir = C:\Users\Tyler\Desktop\Spring 2021\PPL\project3\project3\target\scala-2.12\test-classes.bak
+[debug] About to delete class files:
+[debug] We backup class files:
+[debug] Registering generated classes:
+[debug] 	EventB$.class
+[debug] 	State3.class
+[debug] 	State1.class
+[debug] 	State2.class
+[debug] 	EventA.class
+[debug] 	EventB.class
+[debug] 	ArcadeGameTests.class
+[debug] 	State3$.class
+[debug] 	State2$.class
+[debug] 	State1$.class
+[debug] 	EventA$.class
+[debug] 	Automaton1Tests.class
+[debug] Removing the temporary directory used for backing up class files: C:\Users\Tyler\Desktop\Spring 2021\PPL\project3\project3\target\scala-2.12\test-classes.bak

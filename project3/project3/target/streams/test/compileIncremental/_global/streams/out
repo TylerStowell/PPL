@@ -1,0 +1,20 @@
+[debug] [zinc] IncrementalCompile -----------
+[debug] IncrementalCompile.incrementalCompile
+[debug] previous = Stamps for: 0 products, 0 sources, 0 libraries
+[debug] current source = Set(${BASE}/src/test/scala/edu/colorado/csci3155/project3/ArcadeGameTests.scala, ${BASE}/src/test/scala/edu/colorado/csci3155/project3/Automaton1Tests.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/test/scala/edu/colorado/csci3155/project3/Automaton1Tests.scala, ${BASE}/src/test/scala/edu/colorado/csci3155/project3/ArcadeGameTests.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] Full compilation, no sources in previous analysis.
+[debug] all 2 sources are invalidated
+[debug] Initial set of included nodes: 
+[debug] Recompiling all sources: number of invalidated sources > 50.0% of all sources
+[debug] compilation cycle 1
+[info] compiling 2 Scala sources to C:\Users\Tyler\Desktop\Spring 2021\PPL\project3\project3\target\scala-2.12\test-classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.12:1.4.3:compile for Scala 2.12.10
+[debug] [zinc] Running cached compiler f2fba46 for Scala compiler version 2.12.10
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	C:\Users\Tyler\.jdks\corretto-1.8.0_282\jre\lib\resources.jar;C:\Users\Tyler\.jdks\corretto-1.8.0_282\jre\lib\rt.jar;C:\Users\Tyler\.jdks\corretto-1.8.0_282\jre\lib\sunrsasign.jar;C:\Users\Tyler\.jdks\corretto-1.8.0_282\jre\lib\jsse.jar;C:\Users\Tyler\.jdks\corretto-1.8.0_282\jre\lib\jce.jar;C:\Users\Tyler\.jdks\corretto-1.8.0_282\jre\lib\charsets.jar;C:\Users\Tyler\.jdks\corretto-1.8.0_282\jre\lib\jfr.jar;C:\Users\Tyler\.jdks\corretto-1.8.0_282\jre\classes;C:\Users\Tyler\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.12.10\scala-library-2.12.10.jar
+[debug] 	-classpath
+[debug] 	C:\Users\Tyler\Desktop\Spring 2021\PPL\project3\project3\target\scala-2.12\test-classes;C:\Users\Tyler\Desktop\Spring 2021\PPL\project3\project3\target\scala-2.12\classes;C:\Users\Tyler\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-swing_2.12\2.0.3\scala-swing_2.12-2.0.3.jar;C:\Users\Tyler\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalactic\scalactic_2.12\3.0.8\scalactic_2.12-3.0.8.jar;C:\Users\Tyler\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest_2.12\3.0.8\scalatest_2.12-3.0.8.jar;C:\Users\Tyler\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.12.10\scala-reflect-2.12.10.jar;C:\Users\Tyler\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-xml_2.12\1.2.0\scala-xml_2.12-1.2.0.jar
+[debug] Scala compilation took 1.1542997 s
+[info] done compiling

@@ -1,0 +1,39 @@
+[debug] > Exec(test, None, None)
+[debug] Evaluating tasks: Test / test
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\Tyler\Desktop\Spring 2021\PPL\project2\target\scala-2.12\classes ...
+[info] done compiling
+[info] CanvasTests:
+[info] - Test Bounding Box with Polygon 
+[info] - Test Bounding Box with Circle 
+[info] - Test Bounding Box with two circles and one polygon
+[info] - Test Overlap of two figures
+[info] - Test Place Right
+[info] - Test Place Top
+[info] - Test Rotate 0
+[info] - Test Rotate 1
+[info] - Test Rotate 2
+[info] - Test Rotate 3
+[info] - Test Translate
+[info] InterpreterTests:
+[info] - RectangleTest
+[info] - TriangleTest
+[info] - LineTest
+[info] - CircleTest
+[info] - OverlayOperatorTest
+[info] - PlaceRightTest
+[info] - PlaceTopTest
+[info] - RotationTest
+[info] - Program 1
+[info] - Program 2
+[info] - Program 3
+[info] - Serpinski
+[info] - Mandala
+[info] - Petals
+[info] Run completed in 922 milliseconds.
+[info] Total number of tests run: 25
+[info] Suites: completed 2, aborted 0
+[info] Tests: succeeded 25, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[success] Total time: 2 s, completed Apr 7, 2021 2:53:52 PM
+[debug] > Exec(idea-shell, None, None)

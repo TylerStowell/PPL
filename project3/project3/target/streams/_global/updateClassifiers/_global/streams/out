@@ -1,0 +1,4 @@
+[debug] not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/C:/Users/Tyler/Desktop/Spring%202021/PPL/project3/project3/"), "project3")...
+[warn] Error parsing Maven repository base httpsx://repo.typesafe.com/typesafe/releases/ (unknown protocol: httpsx), ignoring it
+[debug] Done updating ProjectRef(uri("file:/C:/Users/Tyler/Desktop/Spring%202021/PPL/project3/project3/"), "project3")

@@ -1,0 +1,358 @@
+[debug] > Exec(test, None, None)
+[debug] Evaluating tasks: Test / test
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 8 Scala sources to C:\Users\Tyler\Desktop\Spring 2021\PPL\project2\target\scala-2.12\classes ...
+[warn] C:\Users\Tyler\Desktop\Spring 2021\PPL\project2\src\main\scala\edu\colorado\csci3155s2021\project2\Interpreter.scala:61:54: match may not be exhaustive.
+[warn] It would fail on the following input: ConstBool(_)
+[warn]     def evalExpr(e: Expr, env: Environment): Value = e match {
+[warn]                                                      ^
+[warn] C:\Users\Tyler\Desktop\Spring 2021\PPL\project2\src\main\scala\edu\colorado\csci3155s2021\project2\LettuceParser.scala:46:60: match may not be exhaustive.
+[warn] It would fail on the following input: ~(_, Some(_))
+[warn]         val opt5 = exprLev2~ opt(("&&"|"||") ~ exprLev1)^^ {
+[warn]                                                            ^
+[warn] C:\Users\Tyler\Desktop\Spring 2021\PPL\project2\src\main\scala\edu\colorado\csci3155s2021\project2\LettuceParser.scala:64:50: match may not be exhaustive.
+[warn] It would fail on the following input: ~(_, Some(_))
+[warn]         exprLev3 ~ opt(compOperator~ exprLev2) ^^{
+[warn]                                                  ^
+[warn] C:\Users\Tyler\Desktop\Spring 2021\PPL\project2\src\main\scala\edu\colorado\csci3155s2021\project2\LettuceParser.scala:76:52: match may not be exhaustive.
+[warn] It would fail on the following input: ~(_, Some(_))
+[warn]         exprLev4 ~ opt( ("+"| "-") ~ exprLev3 ) ^^ {
+[warn]                                                    ^
+[warn] C:\Users\Tyler\Desktop\Spring 2021\PPL\project2\src\main\scala\edu\colorado\csci3155s2021\project2\LettuceParser.scala:85:49: match may not be exhaustive.
+[warn] It would fail on the following input: ~(_, Some(_))
+[warn]         exprLev5 ~ opt(("*"|"/") ~ exprLev4) ^^ {
+[warn]                                                 ^
+[warn] C:\Users\Tyler\Desktop\Spring 2021\PPL\project2\src\main\scala\edu\colorado\csci3155s2021\project2\LettuceParser.scala:98:98: match may not be exhaustive.
+[warn] It would fail on the following input: ~((x: String forSome x not in ("!", "circle", "line", "rectangle", "triangle")), _)
+[warn]           ( ( "rectangle" | "triangle" | "circle" | "line" | "!"  ) ~ ("(" ~> exprLev1 <~ ")") ^^{
+[warn]                                                                                                  ^
+[warn] 6 warnings found
+[info] done compiling
+[info] compiling 2 Scala sources to C:\Users\Tyler\Desktop\Spring 2021\PPL\project2\target\scala-2.12\test-classes ...
+[info] done compiling
+[info] CanvasTests:
+[info] - Test Bounding Box with Polygon  *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Polygon.getBoundingBox(MyCanvas.scala:21)
+[info]   at edu.colorado.csci3155s2021.project2.CanvasTests.$anonfun$new$1(CanvasTests.scala:32)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+[info]   at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+[info]   ...
+[info] - Test Bounding Box with Circle  *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.MyCircle.getBoundingBox(MyCanvas.scala:44)
+[info]   at edu.colorado.csci3155s2021.project2.CanvasTests.$anonfun$new$2(CanvasTests.scala:42)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+[info]   at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+[info]   ...
+[info] - Test Bounding Box with two circles and one polygon *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.MyCircle.getBoundingBox(MyCanvas.scala:44)
+[info]   at edu.colorado.csci3155s2021.project2.CanvasTests.$anonfun$new$3(CanvasTests.scala:53)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+[info]   at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+[info]   ...
+[info] - Test Overlap of two figures
+[info] - Test Place Right *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.MyCanvas.placeRight(MyCanvas.scala:77)
+[info]   at edu.colorado.csci3155s2021.project2.CanvasTests.$anonfun$new$5(CanvasTests.scala:83)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+[info]   at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+[info]   ...
+[info] - Test Place Top *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.MyCanvas.placeTop(MyCanvas.scala:82)
+[info]   at edu.colorado.csci3155s2021.project2.CanvasTests.$anonfun$new$6(CanvasTests.scala:95)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+[info]   at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+[info]   ...
+[info] - Test Rotate 0 *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.MyCanvas.rotate(MyCanvas.scala:89)
+[info]   at edu.colorado.csci3155s2021.project2.CanvasTests.$anonfun$new$7(CanvasTests.scala:105)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+[info]   at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+[info]   ...
+[info] - Test Rotate 1 *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.MyCanvas.rotate(MyCanvas.scala:89)
+[info]   at edu.colorado.csci3155s2021.project2.CanvasTests.$anonfun$new$8(CanvasTests.scala:115)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+[info]   at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+[info]   ...
+[info] - Test Rotate 2 *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.MyCanvas.rotate(MyCanvas.scala:89)
+[info]   at edu.colorado.csci3155s2021.project2.CanvasTests.$anonfun$new$9(CanvasTests.scala:126)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+[info]   at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+[info]   ...
+[info] - Test Rotate 3 *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.MyCanvas.rotate(MyCanvas.scala:89)
+[info]   at edu.colorado.csci3155s2021.project2.CanvasTests.$anonfun$new$12(CanvasTests.scala:151)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+[info]   at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+[info]   ...
+[info] - Test Translate *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.MyCanvas.translate(MyCanvas.scala:72)
+[info]   at edu.colorado.csci3155s2021.project2.CanvasTests.$anonfun$new$15(CanvasTests.scala:172)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+[info]   at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+[info]   ...
+[info] InterpreterTests:
+[info] - RectangleTest *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:68)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:125)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$1(InterpreterTests.scala:31)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   ...
+[info] - TriangleTest *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:70)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:125)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$3(InterpreterTests.scala:48)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   ...
+[info] - LineTest *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:64)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$5(InterpreterTests.scala:65)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - CircleTest *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:67)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$7(InterpreterTests.scala:82)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - OverlayOperatorTest *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:68)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$9(InterpreterTests.scala:99)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - PlaceRightTest *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:70)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$12(InterpreterTests.scala:122)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - PlaceTopTest *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:71)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$15(InterpreterTests.scala:145)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - RotationTest *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:71)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$18(InterpreterTests.scala:169)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - Program 1 *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:66)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:125)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$20(InterpreterTests.scala:188)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   ...
+[info] - Program 2 *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:130)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:125)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$21(InterpreterTests.scala:201)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   ...
+[info] - Program 3 *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:65)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:125)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$22(InterpreterTests.scala:214)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   ...
+[info] - Serpinski *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:131)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$23(InterpreterTests.scala:227)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - Mandala *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:131)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$24(InterpreterTests.scala:242)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] - Petals *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalExpr(Interpreter.scala:131)
+[info]   at edu.colorado.csci3155s2021.project2.Interpreter$.evalProgram(Interpreter.scala:136)
+[info]   at edu.colorado.csci3155s2021.project2.TestPrograms$.parseAndInterpretProgram(TestPrograms.scala:102)
+[info]   at edu.colorado.csci3155s2021.project2.InterpreterTests.$anonfun$new$25(InterpreterTests.scala:256)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:22)
+[info]   at org.scalatest.Transformer.apply(Transformer.scala:20)
+[info]   ...
+[info] Run completed in 1 second, 302 milliseconds.
+[info] Total number of tests run: 25
+[info] Suites: completed 2, aborted 0
+[info] Tests: succeeded 1, failed 24, canceled 0, ignored 0, pending 0
+[info] *** 24 TESTS FAILED ***
+[error] Failed tests:
+[error] 	edu.colorado.csci3155s2021.project2.InterpreterTests
+[error] 	edu.colorado.csci3155s2021.project2.CanvasTests
+[error] (Test / test) sbt.TestsFailedException: Tests unsuccessful
+[error] Total time: 23 s, completed Mar 18, 2021 2:48:10 PM
+[debug] > Exec(idea-shell, None, None)
